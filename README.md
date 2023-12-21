@@ -28,7 +28,7 @@ The russian version of the task can be found in the repository.
 
 ![linux_monitoringv2.0](misc/images/linux_monitoringv2.0.png)
 
-Planet Earth, USA, California, nowadays.
+Planet Earth, nowadays.
 
 The working day has just started and you’ve already been called to your superiors. They tell you that your buddy Seb hasn't shown up for work in four days. There is a risk that his task will not be finished on time.
 So, now it's your responsibility to figure out the monitoring in Linux, so that you can take over for your careless teammate if necessary.
