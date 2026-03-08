@@ -46,6 +46,7 @@ touch_file_and_folder() {
     printf "| %-98s %-10s\n" "$path/$folder_name/" "$(date +%d.%m.%y)"
 
     for ((j = 0; j < count_file; j++)); do
+      check_avail_size || return 1
       file_name=$(generate_name "$letters_file" "$j")."$extension"
       while [[ -e "$path/$folder_name/$file_name" ]]; do
         file_name=$(generate_name "$letters_file" "$j")."$extension"
