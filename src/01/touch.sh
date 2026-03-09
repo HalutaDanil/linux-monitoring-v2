@@ -53,7 +53,7 @@ touch_file_and_folder() {
       done
       truncate -s "$size_file" "$path/$folder_name/$file_name"
 
-      printf "|-- %-96s %-10s   %-6s\n" "$path/$folder_name/$file_name" "$(date +%d.%m.%y)" "$size_file"
+      printf "|-- %-96s %-10s   %-6s\n" "$path/$folder_name/$file_name" "$(date +%d.%m.%y)" ""$size_file"b"
     done
   done
 }
