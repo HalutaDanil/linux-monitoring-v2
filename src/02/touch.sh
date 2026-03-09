@@ -26,14 +26,13 @@ generate_name() {
 
 touch_file_and_folder() {
   local path="$1"
-  local count_subfolder="$2"
-  local letters_folder="$3"
-  local count_file="$4"
-  local letters_file="$5"
-  local extension="$6"
-  local size_file="$7"
+  local count_subfolder=20
+  local letters_folder="$2"
+  local letters_file="$3"
+  local extension="$4"
+  local size_file="$5"
 
-  printf "%-120s %-10s %-6s\n" "PATH" "DATE" "SIZE"
+  printf "%-150s %-10s %-6s\n" "PATH" "DATE" "SIZE"
 
   for ((i = 0; i < count_subfolder; i++)); do
     check_avail_size || return 1
@@ -43,9 +42,9 @@ touch_file_and_folder() {
     done
     mkdir "$path/$folder_name"
 
-    printf "| %-118s %-10s\n" "$path/$folder_name/" "$(date +%d.%m.%y)"
+    printf "| %-148s %-10s\n" "$path/$folder_name/" "$(date +%d.%m.%y)"
 
-    for ((j = 0; j < count_file; j++)); do
+    for ((j = 0; j < $((RANDOM % 30)); j++)); do
       check_avail_size || return 1
       file_name=$(generate_name "$letters_file" "$j")."$extension"
       while [[ -e "$path/$folder_name/$file_name" ]]; do
@@ -53,7 +52,7 @@ touch_file_and_folder() {
       done
       truncate -s "$size_file" "$path/$folder_name/$file_name"
 
-      printf "|-- %-116s %-10s   %-6s\n" "$path/$folder_name/$file_name" "$(date +%d.%m.%y)" ""$size_file"b"
+      printf "|-- %-146s %-10s   %-6s\n" "$path/$folder_name/$file_name" "$(date +%d.%m.%y)" ""$size_file"b"
     done
   done
 }
