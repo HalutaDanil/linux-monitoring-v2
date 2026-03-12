@@ -28,3 +28,5 @@ touch_file_and_folder "$path" "$let_folder" "${let_file%.*}" "${let_file#*.}" "$
 end_work=$(date +"%H:%M:%S")
 
 printf "script start time: %s\nscript end time: %s\nfull work time in second: %s\n\n%s" "$start_work" "$end_work" "$SECONDS" "$(cat "$log_file")" >"$log_file"
+
+printf "script start time: %s\nscript end time: %s\nfull work time in second: %s\n" "$start_work" "$end_work" "$SECONDS"
