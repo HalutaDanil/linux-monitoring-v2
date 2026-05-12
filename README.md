@@ -19,11 +19,27 @@ Evolution of monitoring: from simple bash scripts to full Grafana dashboards wit
 
 ### ✨ Features
 
-| Task | Description |\n|------|-------------|\n| 01 | Input validation |\n| 02 | File generation |\n| 03 | File cleanup with confirmation |\n| 04 | Operation logging |\n| 05 | Top-N process sorting |\n| 06 | Terminal visualization |\n| 07 | Grafana + Prometheus integration |\n| 08 | Load testing with stress |\n| 09 | Custom Grafana dashboard |
+| Task | Description |
+|------|-------------|
+| 01 | Input validation |
+| 02 | File generation |
+| 03 | File cleanup with confirmation |
+| 04 | Operation logging |
+| 05 | Top-N process sorting |
+| 06 | Terminal visualization |
+| 07 | Grafana + Prometheus integration |
+| 08 | Load testing with stress |
+| 09 | Custom Grafana dashboard |
 
 ### 🚀 Quick Start
 
-```bash\n# Run monitoring\ncd src/07\nbash main.sh\n\n# View Grafana at http://localhost:3000\n```
+```bash
+# Run monitoring
+cd src/07
+bash main.sh
+
+# View Grafana at http://localhost:3000
+```
 
 ---
 
@@ -42,11 +58,27 @@ Evolution of monitoring: from simple bash scripts to full Grafana dashboards wit
 
 ### ✨ Возможности
 
-| Задача | Описание |\n|--------|----------|\n| 01 | Валидация ввода |\n| 02 | Генерация файлов |\n| 03 | Очистка файлов с подтверждением |\n| 04 | Логирование операций |\n| 05 | Сортировка top-N процессов |\n| 06 | Визуализация в терминале |\n| 07 | Интеграция Grafana + Prometheus |\n| 08 | Нагрузочное тестирование со stress |\n| 09 | Кастомный дашборд Grafana |
+| Задача | Описание |
+|--------|----------|
+| 01 | Валидация ввода |
+| 02 | Генерация файлов |
+| 03 | Очистка файлов с подтверждением |
+| 04 | Логирование операций |
+| 05 | Сортировка top-N процессов |
+| 06 | Визуализация в терминале |
+| 07 | Интеграция Grafana + Prometheus |
+| 08 | Нагрузочное тестирование со stress |
+| 09 | Кастомный дашборд Grafana |
 
 ### 🚀 Быстрый старт
 
-```bash\n# Запуск мониторинга\ncd src/07\nbash main.sh\n\n# Grafana доступна по http://localhost:3000\n```
+```bash
+# Запуск мониторинга
+cd src/07
+bash main.sh
+
+# Grafana доступна по http://localhost:3000
+```
 
 ---
 
