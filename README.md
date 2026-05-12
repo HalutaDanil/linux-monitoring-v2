@@ -31,15 +31,6 @@ Evolution of monitoring: from simple bash scripts to full Grafana dashboards wit
 | 08 | Load testing with stress |
 | 09 | Custom Grafana dashboard |
 
-### 🚀 Quick Start
-
-```bash
-# Run monitoring
-cd src/07
-bash main.sh
-
-# View Grafana at http://localhost:3000
-```
 
 ---
 
@@ -70,15 +61,6 @@ bash main.sh
 | 08 | Нагрузочное тестирование со stress |
 | 09 | Кастомный дашборд Grafana |
 
-### 🚀 Быстрый старт
-
-```bash
-# Запуск мониторинга
-cd src/07
-bash main.sh
-
-# Grafana доступна по http://localhost:3000
-```
 
 ---
 
